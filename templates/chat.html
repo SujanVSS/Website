@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat with Gemini</title>
+</head>
+<body>
+    <h1>Chat with Gemini</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div>
+            <button type="submit"> Submit </button>
+        </div>
+    </form>
+        {% if output %}
+            <h1>
+                {{ output }}
+            </h1>
+        {% endif %}
+</body>
+</html>

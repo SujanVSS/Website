@@ -1,3 +1,13 @@
-<h1>
-    Hello World
-</h1>
+{% extends 'base.html' %}
+
+{% block title %}
+    Home Page
+{%endblock%}
+
+{% block content%}
+    <h1>
+        Hello World
+    </h1>
+
+    <a href="{% url 'aisearch:Chat' %}"> Go to the ChatBot </a>
+{% endblock %}
